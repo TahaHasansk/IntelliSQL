@@ -11,7 +11,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 def get_response(question):
-    model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+   model = genai.GenerativeModel("gemini-1.5-flash")
 
     prompt = """
 You are an expert in converting English questions to SQL queries.
